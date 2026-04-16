@@ -118,8 +118,62 @@ Gets the camera's position in x, y, and z coordinates.
 
 ### PlaceLot
 ### PlaceNetwork
+
+Places the specified network.
+
+Parameters:
+
+`<network type number>` `<x1>` `<y1>` `<x2>` `<y2>`
+
+The network type number is a value from the following table:
+
+| Network Type Number | Network Name |
+| ----------- | ---------- |
+| 0           | Road       |
+| 1           | Rail       |
+| 2           | Highway    |
+| 3           | Street     |
+| 4           | Water Pipe |
+| 5           | Power Pole |
+| 6           | Avenue     |
+| 7           | Subway     |
+| 8           | Light Rail |
+| 9           | Monorail   |
+| 10          | One Way Road   |
+| 11          | Dirt Road    |
+| 12          | Ground Highway    |
+
 ### PlaceNetworkIntersection
 ### PlaceZone
+
+Places the specified zone.
+
+Parameters:
+
+`<zone type number>` `<x1>` `<y1>` `<x2>` `<y2>`
+
+The zone type number is a value from the following table:
+
+| Zone Number | Zone Name |
+|-------------|-----------|
+| 0 | None |
+| 1 | Low Density Residential |
+| 2 | Medium Density Residential |
+| 3 | High Density Residential |
+| 4 | Low Density Commercial  |
+| 5 | Medium Density Commercial |
+| 6 | High Density Commercial  |
+| 7 | Agriculture (Industrial Resource) |
+| 8 | Light Industrial |
+| 9 | Heavy Industrial |
+| 10 | Military |
+| 11 | Airport |
+| 12 | Seaport |
+| 13 | Spaceport |
+| 14 | Landfill |
+| 15 | Plopped Building |
+
+
 ### SetViewTarget
 
 Sets the game camera to the specified position.
