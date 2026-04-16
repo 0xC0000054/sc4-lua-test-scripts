@@ -113,9 +113,7 @@ Parameters: `<true/false>` - show confirmation dialog. `<true/false>` - save cit
 ### SetCellAltitude
 ### SetCityEstablished
 
-Sets a value indicating if the city is established (in mayor mode).
-
-Parameters: `<true/false>`
+Sets the city to established (mayor mode).
 
 ### SetCityName
 
