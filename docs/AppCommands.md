@@ -189,6 +189,43 @@ Parameters: 'cell' `<cell x number>` `<cell z number>` or 'position' `<x number>
 ### GZWinGenerateInputEvent
 ### GZWinIsWindowPresent
 ### GZWinMessageBox
+
+Shows a basic message box.
+
+This message box has a limited text length for the message, around 256 characters.
+
+Parameters:
+
+`<message>` `<title>` `<button type>`
+
+`<message>` - the message.    
+`<title>` - the title.    
+`<button type>` - the message box button type, see the following table.
+
+| Button Type Number | Description |
+|--------------------|-------------|
+| 0 | OK |
+| 1 | OK/Cancel |
+| 2 | Retry/Cancel |
+| 3 | Yes/No |
+| 4 | Yes/No/Cancel |
+| 5 | Abort/Retry/Ignore |
+
+
+Return Value:
+
+The identifier of the button that was clicked.
+
+| Button Identifier | Button Name |
+|-------------------|-------------|
+| 0x5301814a | OK |
+| 0x53018147 | Cancel |
+| 0x53018146 | Abort |
+| 0x5301814b | Retry |
+| 0x53018148 | Ignore |
+| 0x5301814c | Yes |
+| 0x53018149 | No |
+
 ### GZWinMoveCursorToPosition
 ### GZWinMoveCursorToWindow
 ### GZWinMoveWindow
@@ -196,3 +233,18 @@ Parameters: 'cell' `<cell x number>` `<cell z number>` or 'position' `<x number>
 ### GZWinSetWindowText
 ### GZWinShowWindow
 ### GZWinWaitForWindow
+
+Waits for the specified window to be created.
+
+Parameters:
+
+`<window id>` `<parent window id>` `<blocking wait>`
+
+`<window id>` - the id of the target window.    
+`<parent window id>` - the id of the parent window or 0 for the main game window.    
+`<blocking wait>` - true to block until the window is created; otherwise, false.    
+
+Return:
+
+If `<blocking wait>` is false, the function will return 1 if the window has not been created.
+This allows the caller to use their own wait loop.
