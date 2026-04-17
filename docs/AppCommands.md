@@ -211,6 +211,13 @@ Parameters: 'cell' `<cell x number>` `<cell z number>` or 'position' `<x number>
 ### GZWinCreateWindow
 ### GZWinDestroyWindow
 ### GZWinEnableUserInput
+
+Allows user input to be disabled or enabled.
+
+Parameters:
+
+`<enable>` - A Boolean indicating if input should be enabled.
+
 ### GZWinGenerateInputEvent
 ### GZWinIsWindowPresent
 ### GZWinMessageBox
