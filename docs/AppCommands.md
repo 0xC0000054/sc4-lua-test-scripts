@@ -117,6 +117,28 @@ Writes to the game's registry, unimplemented in retail builds.
 Gets the camera's position in x, y, and z coordinates.
 
 ### PlaceLot
+
+Places the specified lot.
+
+Parameters:
+
+`<lot exemplar IID>` `<cell x>` `<cell z>` `<facing>` `<use plop effects>` `<unknown Boolean>`
+
+`<lot exemplar IID>` - the instance id of the lot configuration exemplar.    
+`<cell x>` - the cell x position.    
+`<cell z>` - the cell z position.    
+`<facing>` - an integer from the following table:    
+
+| Lot Facing Number | Name |
+|-------------------|------|
+| 0 | North |
+| 1 | East |
+| 2 | South |
+| 3 | West |
+
+`<use plop effects>` - true to use the lot plop effects; otherwise, false.    
+`<unknown Boolean>` - this parameter is required, but likely unused.    
+
 ### PlaceNetwork
 
 Places the specified network.
@@ -144,6 +166,9 @@ The network type number is a value from the following table:
 | 12          | Ground Highway    |
 
 ### PlaceNetworkIntersection
+
+Unimplemented.
+
 ### PlaceZone
 
 Places the specified zone.
@@ -231,6 +256,18 @@ The identifier of the button that was clicked.
 ### GZWinMoveWindow
 ### GZWinSelectListboxItem
 ### GZWinSetWindowText
+
+Sets the window text.
+
+Parameters:
+
+`<window id>` `<parent window id>` `<text>`
+
+`<window id>` - the id of the target window.    
+`<parent window id>` - the id of the parent window or 0 for the main game window.    
+`<text>` - the window text.    
+
+
 ### GZWinShowWindow
 ### GZWinWaitForWindow
 
