@@ -19,7 +19,31 @@ The commands available in the city view.
 ### EnableNightOnly
 ### FullScreenRefresh
 ### GetAltitude
+
+Gets the altitude at the specified position.
+
+Parameters:
+
+`<x>` `<z>`
+
+`<x>` - the x position as a float32 value.    
+`<z>` - the z position as a float32 value.
+
+Returns the altitude as a float32 value.
+
 ### GetCellAltitude
+
+Gets the altitude at the specified cell.
+
+Parameters:
+
+`<cell x>` `<cell z>`
+
+`<cell x>` - the cell x position.    
+`<cell z>` - the cell z position.
+
+Returns the altitude as a float32 value.
+
 ### GetCityEstablished
 
 Gets a value indicating if the city is established (in mayor mode).
@@ -37,6 +61,11 @@ Returns two integers, the x cell count and the z cell count.
 Gets the mayor name.
 
 ### GetSeaLevel
+
+Gets the sea level.
+
+Returns the sea level as a float32 value.
+
 ### GetSimulationDate
 ### HighwayTool
 ### LabelTool
@@ -110,7 +139,35 @@ Parameters: `<true/false>` - show confirmation dialog. `<true/false>` - save cit
 ### ScrollUpOnce
 ### ScrollUpStop
 ### SetAltitude
+
+Sets the altitude at the specified position.
+
+Parameters:
+
+`<x>` `<z>` `<altitude>`
+
+`<x>` - the x position as a float32 value.    
+`<z>` - the z position as a float32 value.    
+`<altitude>` - the altitude as a float32 value.
+
 ### SetCellAltitude
+
+Sets the altitude at the specified position.
+
+Parameters:
+
+`<x1>` `<z1>` `[x2]` `[z2]` `<altitude>`
+
+`<x1>` - the starting cell x position.    
+`<z1>` - the starting cell z position.    
+`[x2]` - the ending cell x position.    
+`[z2]` - the ending cell z position.    
+`<altitude>` - the altitude as a float32 value.    
+
+The `x2` and `z2` parameters are optional, when used they form a bounding box of cells that will
+have the altitude changed.
+If omitted, the altitude will only be changed for the cell specified by `x1` and `z1`.
+
 ### SetCityEstablished
 
 Sets the city to established (mayor mode).
@@ -132,6 +189,11 @@ Sets the mayor name.
 Parameters: `name string`
 
 ### SetSeaLevel
+
+Sets the sea level.
+
+Parameters: `<sea level>` - the sea level as a float32 value.
+
 ### SignTool
 ### SimSpeedFast
 ### SimSpeedMedium
