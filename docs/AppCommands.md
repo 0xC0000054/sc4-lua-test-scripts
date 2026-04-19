@@ -62,6 +62,9 @@ Gets a value indicating if popup modal dialog boxes are enabled.
 Returns a Boolean indicating if popup modal dialog boxes are enabled.
 
 ### GetPopupModalDialogsSafe
+
+Gets a value indicating if it is safe to show a modal dialog.
+
 ### GetRandomInteger
 ### GetRandomNumber
 ### GetTimerTime
@@ -111,6 +114,16 @@ Takes a snapshot/screenshot.
 Parameters: `<output file name>` [x1, y1, x2, y2]
 
 ### ViewWebBrowser
+
+Launches a web browser with the specified URL.
+
+Parameters:
+
+`<url>` `<minimize game window>`
+
+`<url>` - the URL.
+`<minimize game window>` - true to minimize the game window; otherwise, false.
+
 ### WaitForMessage2
 
 Used in a loop to wait for an in-game message, returns 1 while waiting.
