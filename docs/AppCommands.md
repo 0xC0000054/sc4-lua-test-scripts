@@ -56,6 +56,11 @@ Strips the file name from a path.
 Strips the path and extension from a file name.
 
 ### GetPopupModalDialogsEnabled
+
+Gets a value indicating if popup modal dialog boxes are enabled.
+
+Returns a Boolean indicating if popup modal dialog boxes are enabled.
+
 ### GetPopupModalDialogsSafe
 ### GetRandomInteger
 ### GetRandomNumber
@@ -86,6 +91,13 @@ Broadcasts a message on the game's internal messaging system.
 Unimplemented in retail builds.
 
 ### SetPopupModalDialogsEnabled
+
+Sets a value indicating if popup modal dialog boxes are enabled.
+
+Parameters:
+
+`<enable>` - A Boolean indicating if popup modal dialog boxes are enabled.
+
 ### SetScriptAutoYield
 
 Allows test scripts to yield execution while waiting in loops.
