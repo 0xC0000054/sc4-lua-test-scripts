@@ -66,7 +66,25 @@ Returns a Boolean indicating if popup modal dialog boxes are enabled.
 Gets a value indicating if it is safe to show a modal dialog.
 
 ### GetRandomInteger
+
+Gets a random Sint32 in the specified range.
+
+Parameters:
+
+`<min>` `<max>`
+`<min>` - the minimum value.
+`<max>` - the maximum value.
+
 ### GetRandomNumber
+
+Gets a random Float64 in the specified range.
+
+Parameters:
+
+`<min>` `<max>`
+`<min>` - the minimum value.
+`<max>` - the maximum value.
+
 ### GetTimerTime
 ### GZLog
 
