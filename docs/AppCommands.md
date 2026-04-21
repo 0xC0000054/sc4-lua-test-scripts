@@ -29,7 +29,7 @@ Executes the specified script.
 Parameters: `<file name>` or `<type number>` `<group number>` `<instance number>`
 
 ### GameDelay
-### GamePause 
+### GamePause
 
 Pauses or unpauses the game.
 
@@ -37,6 +37,24 @@ Parameters: `<true/false>` - pause or unpause `<pause type string>` - one or mor
 
 ### GetAppState
 ### GetDateAndTime
+
+Gets the current date and/or time.
+
+Parameters:
+
+`[date]` `[time]`
+`[date]` - return the date.
+`[time]` - return the date.
+
+When the command is run without parameters, it will return both the date and time.
+
+Return Value:
+
+The current date and/or time as strings.
+
+The date string uses the `mm/dd/yyyy` format.   
+The time string uses the `hh:mm:ss` format.
+
 ### GetDirectory
 
 Gets the path to a game directory.
