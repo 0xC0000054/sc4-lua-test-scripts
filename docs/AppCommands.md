@@ -44,7 +44,13 @@ Gets the path to a game directory.
 Parameters: `<directory string>` - one of: App, CDApp, Data, UserData, CDData, Plugin, UserPlugin, CDPlugin, Region, MySim, Album, TestScripts, Temp, Desktop.
 
 ### GetFrameCount
+
+Gets the frame count.
+
 ### GetFrameRate
+
+Gets the frame rate.
+
 ### GetMemInfo
 ### GetOccupantCount
 ### GetPathDirectory
