@@ -110,6 +110,23 @@ Parameters:
 `<max>` - the maximum value.
 
 ### GetTimerTime
+
+Gets a time stamp from a system timer.
+
+Parameters:
+
+`<unit>` - a string specifying the time stamp measurement unit. The possible values are listed in the following table:
+
+| Unit String | Name |
+|-------------|------|
+| ns | Nanoseconds |
+| us | Microseconds |
+| ms | Milliseconds |
+| sec | Seconds |
+| min | Minutes |
+
+Returns the time stamp number converted to the specified unit.
+
 ### GZLog
 
 Unimplemented in retail builds.
