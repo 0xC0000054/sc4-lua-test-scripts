@@ -119,11 +119,11 @@ Parameters:
 
 | Unit String | Name |
 |-------------|------|
-| ns | Nanoseconds |
-| us | Microseconds |
-| ms | Milliseconds |
-| sec | Seconds |
-| min | Minutes |
+| `ns` | Nanoseconds |
+| `us` | Microseconds |
+| `ms` | Milliseconds |
+| `sec` | Seconds |
+| `min` | Minutes |
 
 Returns the time stamp number converted to the specified unit.
 
