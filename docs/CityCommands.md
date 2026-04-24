@@ -67,6 +67,28 @@ Gets the sea level.
 Returns the sea level as a float32 value.
 
 ### GetSimulationDate
+
+Gets the simulaton date.
+
+Parameters:
+
+One to six strings from the following table with spaces as the separator.
+
+| Date String | Description |
+|-------------|-------------|
+| `"day of month"` | The day of the month. |
+| `"day of week"` | The day of the week. Range of 1-7 representing Monday-Sunday. |
+| `"day of year"` | The day of the year. |
+| `"month"` | The month. Range of 1-12 representing January-December. |
+| `"number"` | The internal date representation. |
+| `"year"` | The year. |
+
+Returns numbers for each of the requested string values.
+
+Remarks:
+
+The start date for the simulation is January 1st, 2000.
+
 ### HighwayTool
 ### LabelTool
 ### LightRailTool
