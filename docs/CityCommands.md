@@ -102,12 +102,34 @@ The start date for the simulation is January 1st, 2000.
 ### PauseAnimation
 ### PipesTool
 ### PlaceBuilding
+
+Places a building at the specified position.
+
+Parameters:
+
+`<building id>` `<position x>` `<position z>`
+
+`<building id>` - the building id number.   
+`<position x>` - the x position.    
+`<position z>` - the z position.    
+
 ### PlaceBusStopTool
 ### PlaceClinicTool
 ### PlaceCollegeTool
 ### PlaceElementarySchoolTool
 ### PlaceFerryTerminalTool
 ### PlaceFlora
+
+Places flora at the specified position.
+
+Parameters:
+
+`<flora id>` `<position x>` `<position z>`
+
+`<flora id>` - the flora id number.   
+`<position x>` - the x position.    
+`<position z>` - the z position.    
+
 ### PlaceFreightDepotTool
 ### PlaceHighSchoolTool
 ### PlaceHospitalTool
