@@ -145,8 +145,8 @@ Gets a random Sint32 in the specified range.
 
 Parameters:
 
-`<min>` `<max>`
-`<min>` - the minimum value.
+`<min>` `<max>`   
+`<min>` - the minimum value.   
 `<max>` - the maximum value.
 
 ### GetRandomNumber
@@ -155,8 +155,8 @@ Gets a random Float64 in the specified range.
 
 Parameters:
 
-`<min>` `<max>`
-`<min>` - the minimum value.
+`<min>` `<max>`    
+`<min>` - the minimum value.    
 `<max>` - the maximum value.
 
 ### GetTimerTime
@@ -230,7 +230,7 @@ Parameters:
 
 `<url>` `<minimize game window>`
 
-`<url>` - the URL.
+`<url>` - the URL.    
 `<minimize game window>` - true to minimize the game window; otherwise, false.
 
 ### WaitForMessage2
