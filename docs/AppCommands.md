@@ -30,11 +30,11 @@ Parameters:
 
 | Exception Type String |
 |-----------------------|
-| `access violation` |
-| `illegal instruction` |
-| `division by zero` |
-| `stack overflow` |
-| `stack trash` |
+| `"access violation"` |
+| `"illegal instruction"` |
+| `"division by zero"` |
+| `"stack overflow"` |
+| `"stack trash"` |
 
 `<unknown Boolean>` - it is unclear what this value was for. It doesn't appear to visibly alter the command's behavior in the retail game.
 
