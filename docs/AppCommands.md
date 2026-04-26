@@ -310,6 +310,16 @@ Parameters: 'cell' `<cell x number>` `<cell z number>` or 'position' `<x number>
 ## Window Commands
 
 ### GZWinClickButton
+
+Sends a click event to the specified button.
+
+Parameters:
+
+`<button id>` `<parent window id>`
+
+`<button id>` - the button id number.    
+`<parent window id>` - the parent window id number, or 0 for the main window.
+
 ### GZWinCreateWindow
 ### GZWinDestroyWindow
 ### GZWinEnableUserInput
