@@ -59,7 +59,7 @@ Parameters:
 
 `<unit>` `<delay>`
 
-`<unit>` - a string from the following table specifing the measurement unit.
+`<unit>` - a string from the following table specifying the measurement unit.
 
 | Unit | Description |
 |------|-------------|

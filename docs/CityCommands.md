@@ -68,7 +68,7 @@ Returns the sea level as a float32 value.
 
 ### GetSimulationDate
 
-Gets the simulaton date.
+Gets the simulation date.
 
 Parameters:
 
