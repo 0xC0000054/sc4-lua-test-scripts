@@ -47,11 +47,32 @@ Executes the specified script.
 Parameters: `<file name>` or `<type number>` `<group number>` `<instance number>`
 
 ### GameDelay
+
+Delays the game by the specified amount of time.
+
+Parameters:
+
+`<unit>` `<delay>`
+
+`<unit>` - a string from the following table specifing the measurement unit.
+
+| Unit | Description |
+|------|-------------|
+| `frames` | The game will be delayed by the specified number of frames. |
+| `time` | The game will be delayed by the specified number of milliseconds. |
+
+`<delay>` - the delay as a Uint32 value.
+
 ### GamePause
 
 Pauses or unpauses the game.
 
-Parameters: `<true/false>` - pause or unpause `<pause type string>` - one or more of: All, Draw, Animation, SimulationClock, 24HourClock.
+Parameters: 
+
+`<pause>` `<pause type string>`
+
+`<pause>` - a Boolean indicating weather to pause or unpause.    
+`<pause type string>` - one or more of: All, Draw, Animation, SimulationClock, 24HourClock.
 
 ### GetAppState
 
