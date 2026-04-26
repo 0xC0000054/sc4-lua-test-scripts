@@ -12,7 +12,12 @@ Unimplemented in retail builds.
 
 Cancels a previous WaitForMessage2 subscription.
 
-Parameters: `<message number>` `<unique string token>`
+Parameters: 
+
+`<message number>` `<unique string token>`
+
+`<message number>` - the message number.    
+`<unique string token>` - a unique string token.
 
 ### CreateException
 
@@ -214,13 +219,23 @@ Parameters:
 
 Allows test scripts to yield execution while waiting in loops.
 
-Parameters: `<-1>` - placeholder for the currently executing script's identifier  `<true/false>` - auto yield value. 
+Parameters:
+
+`<script id>` `<auto yield enabled>`
+
+`<script id>` - the script identifier or -1 for the current script.    
+`<auto yield enabled>` - Boolean indicating if auto yield is enabled. 
 
 ### TakeSnapshot
 
 Takes a snapshot/screenshot.
 
-Parameters: `<output file name>` [x1, y1, x2, y2]
+Parameters:
+
+`<output file name>` `[x1, y1, x2, y2]`
+
+`<output file name>` - the output file name.    
+`[x1, y1, x2, y2]` - an optional crop rectangle, when not specified the entire game window will be captured.
 
 ### ViewWebBrowser
 
@@ -237,7 +252,12 @@ Parameters:
 
 Used in a loop to wait for an in-game message, returns 1 while waiting.
 
-Parameters: `<message number>` `<unique string token>`
+Parameters: 
+
+`<message number>` `<unique string token>`
+
+`<message number>` - the message number.    
+`<unique string token>` - a unique string token.
 
 ### WriteRegistry 
 
