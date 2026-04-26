@@ -54,6 +54,17 @@ Pauses or unpauses the game.
 Parameters: `<true/false>` - pause or unpause `<pause type string>` - one or more of: All, Draw, Animation, SimulationClock, 24HourClock.
 
 ### GetAppState
+
+Gets a number indicating the application state.
+
+Return Value:
+
+| Number | State Name |
+|--------|------------|
+| 0 | Unspecified |
+| 1 | In Region View |
+| 2 | In City View |
+
 ### GetDateAndTime
 
 Gets the current date and/or time.
