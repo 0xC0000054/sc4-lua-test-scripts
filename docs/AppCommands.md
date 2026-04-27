@@ -384,6 +384,20 @@ Parameters:
 
 ### GZWinGenerateInputEvent
 ### GZWinIsWindowPresent
+
+Gets a value indicating if the specified window is present.
+
+Parameters:
+
+`<window id>` `<parent window id>`
+
+`<window id>` - the window id number.    
+`<parent window id>` - the parent window id number, or 0 for the main window.
+
+Return Value:
+
+A status parameter value of 0 if the window is present.
+
 ### GZWinMessageBox
 
 Shows a basic message box.
