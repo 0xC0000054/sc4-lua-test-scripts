@@ -114,7 +114,26 @@ The time string uses the `hh:mm:ss` format.
 
 Gets the path to a game directory.
 
-Parameters: `<directory string>` - one of: App, CDApp, Data, UserData, CDData, Plugin, UserPlugin, CDPlugin, Region, MySim, Album, TestScripts, Temp, Desktop.
+Parameters: 
+
+`<directory string>` - one of the values from the following table:
+
+| Directory String | Description |
+|------------------|-------------|
+| Album | The folder used for album screenshots. |
+| App | The folder containing the game's executable. |
+| CDApp | Identical to _App_ on Windows. |
+| CDData | Identical to _Data_ on Windows. |
+| CDPlugin | Identical to _Plugin_ on Windows. |
+| Data | The root folder of the game's installation. |
+| Desktop | The user's Desktop. |
+| MySim | The MySim folder. Typically `Documents\SimCity 4\MySim` on Windows. |
+| Plugin | The installation plugins folder. |
+| Region | The user's Regions folder. Typically `Documents\SimCity 4\Regions` on Windows.  |
+| Temp | The game's temp directory. |
+| TestScripts | The folder used for test scripts. |
+| UserData | The folder containing the user's configuration and the parent folder of the user plugins, regions, etc. Typically `Documents\SimCity 4` on Windows.  |
+| UserPlugin | The plugins folder under _UserData_. Typically `Documents\SimCity 4\Plugins` on Windows. |
 
 ### GetFrameCount
 
