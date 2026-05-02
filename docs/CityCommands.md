@@ -154,13 +154,22 @@ Parameters: `<lot id>`
 
 Exits to the region view.
 
-Parameters: `<true/false>` - show confirmation dialog.
+Parameters:
+
+`<show confirmation dialog>`
+
+`<show confirmation dialog>` - A Boolean indicating weather to show a confirmation dialog to the user.
 
 ### QuitGame
 
 Exits the game.
 
-Parameters: `<true/false>` - show confirmation dialog. `<true/false>` - save city first.
+Parameters:
+
+`<show confirmation dialog>` `<save city>`
+
+`<show confirmation dialog>` - A Boolean indicating weather to show a confirmation dialog to the user.    
+`<save city>` - A Boolean indicating weather to save the city.
 
 ### RailTool
 ### RoadTool
