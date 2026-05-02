@@ -97,8 +97,8 @@ Gets the current date and/or time.
 
 Parameters:
 
-`[date]` `[time]`
-`[date]` - return the date.
+`[date]` `[time]`   
+`[date]` - return the date.   
 `[time]` - return the date.
 
 When the command is run without parameters, it will return both the date and time.
