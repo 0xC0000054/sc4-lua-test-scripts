@@ -144,6 +144,40 @@ Gets the frame count.
 Gets the frame rate.
 
 ### GetMemInfo
+
+Gets various memory usage statistics.
+
+Parameters:
+
+`[memory usage types]`
+
+`[memory usage types]` - 1 to 6 optional strings describing the memory values to return, possible values are listed in the following table.
+
+| Memory Usage Type | Description |
+|-------------------|-------------|
+| `disk` | The current page file usage for the process in kilobytes. |
+| `disk_max` | The peak page file usage for the process in kilobytes. |
+| `faults` | The number of page faults. |
+| `malloc` | The framework's heap usage in kilobytes, always 0 in retail builds. |
+| `ram` | The current working set for the process in kilobytes. |
+| `ram_max` | The peak working set for the process in kilobytes. |
+
+If the command is run without a usage string, it will return all values. 
+
+Return Value:
+
+A sequence of integers matching the usage strings (if present).
+If no usage strings are present, 6 values are returned in the following order:
+
+| Index | Memory Usage Type |
+|-------|-------------------|
+| 0 | `malloc` |
+| 1 | `ram` |
+| 2 | `disk` |
+| 3 | `faults` |
+| 4 | `ram_max` |
+| 5 | `diak_max` |
+
 ### GetOccupantCount
 ### GetPathDirectory
 
